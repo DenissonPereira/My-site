@@ -1,0 +1,12 @@
+/* Variáveis */
+
+:root {
+    --cor_laranja: orange;
+    --cor_azul: rgb(36, 101, 221);
+    --cor_cinza: rgb(27, 25, 25);
+    --cor_preto: black;
+    --cor_branco: white;
+    --cor_transparente: rgba(255, 255, 255, 0.048);
+    --cor_sombra: rgba(0, 0, 0, 0.2);
+    --desfoque: blur(10px);
+}

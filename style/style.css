@@ -1,0 +1,372 @@
+@import 'variaveis.css';
+
+* {  /* TODO: "*" indica que estamos fazendo isso para tudo */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.principal {
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    
+    padding: 0 30px;
+    background: var(--cor_transparente);
+    backdrop-filter: var(--desfoque); /* Aplica um efeito de desfoque (vidro) ao fundo */
+    border-radius: 0px; /* Opcional: Adiciona cantos arredondados */
+    padding-top: 25px;
+}
+
+.portfolio {
+    color: var(--cor_azul);
+    font-size: 2.5rem;
+    font-weight: 900; /*TODO: Esse muda a grossura da fonte */
+}
+
+.portfolio span {  /* Ele vai procurar algum span na minha classe portfolio */
+    color: var(--cor_laranja);
+    font-weight: 400;
+}
+
+li {
+    color: var(--cor_branco);
+    list-style: none;
+    display: inline-block; /* Colocando o menu na horizontal */
+    font-size: 1.56rem;
+    margin-right: 25px;
+    font-weight: 700;
+}
+
+ul li:hover {   /*TODO: Vai mudar a cor do menu ao passar o mouse */
+    color: var(--cor_azul);
+    transition: 0.5s;
+}
+
+.meu_nome {
+    position: absolute; /*  FIXME: Permite eu mudar a posição mais livre, abaixo está as configurações:  */
+    top: 50%;
+    left: 10%;
+    background: var(--cor_transparente);
+    backdrop-filter: var(--desfoque);
+    width: 600px;
+    height: 150px;
+    border-radius: 20px;
+}
+h1 {
+    color: var(--cor_preto);
+    font-size: 4.375rem;
+}
+
+h1 span {
+    color: var(--cor_branco);
+}
+
+.meu_nome h3 span {
+    color: var(--cor_branco);
+    font-size: 1.5625rem;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    padding: 40px 0;   /* TODO: aqui é o espaçamento*/
+    background-color: var(--cor_preto);
+    width: 100%;
+}
+
+img#segunda_imagem {
+    width: 40%;
+    height: 40%;
+    border-radius: 100%;
+    border: 8px solid;
+    color: var(--cor_laranja);
+    margin-right: 50px;  /* Faz a imagem se distanciar */
+    margin-left: 50px;
+}
+img#segunda_imagem:hover {
+    color: var(--cor_azul);
+}
+
+section div h2 {
+    color: var(--cor_branco);
+    font-size: 3.75rem;
+    margin-right: 90px;
+}
+section div p {
+    color: var(--cor_laranja);
+    font-size: 1.5rem;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-align: justify;
+    padding-right: 90px;
+}
+section div button {
+    font-size: 1rem;
+    background-color: var(--cor_laranja);
+    color: var(--cor_branco);
+    height: 70px;
+    width: 180px;
+    border: 5px solid var(--cor_azul);
+    border-radius: 10px;
+    margin-right: 80px;
+    cursor: pointer;
+}
+
+
+section div button:hover {
+    background-color: var(--cor_azul);
+    transition: 3.5s;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor_branco);
+}
+
+.projetos {
+    background-color: var(--cor_cinza);
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.projetos h2 {
+    color: var(--cor_branco);
+    font-size: 4.375rem;
+}
+
+.card {
+    background-color: var(--cor_preto);
+    height: 360px;
+    width: 330px;
+    border-radius: 20px;
+    padding: 20px 35px; /* FIXME: ele vai "desgrudar" a imagem dentro do card */
+    text-align: center;
+
+}
+
+.card img {
+    height: 100px;
+}
+
+.card h5 {
+    color: var(--cor_branco);
+    font-size: 1.5rem;
+}
+
+.card p {
+    color: var(--cor_branco);
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    font-size: 0.9375rem;
+}
+
+.card a {
+    background-color: var(--cor_laranja);
+    color: white;
+    border-radius: 20px;
+    padding: 20px 20px;
+    cursor: pointer;   /* FIXME: Vai aparecer o cursor do mouse*/
+    display: inline-block;
+}
+
+.ver_projeto:hover {
+    background-color: var(--cor_azul);
+    transition: 1.5 s;
+}
+
+.lugar_dos_cards {
+    display: flex;  /* FIXME: Vai colocar os cards alinhados*/
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.principal {
+    position: relative;
+}
+
+.principal video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1; /* Coloca o vídeo atrás do conteúdo */
+    object-fit: cover;
+}
+body {
+    overflow-x: hidden;
+}
+
+.denisson {
+    position: absolute;
+    left: 50px;
+    top: 15px;
+}
+
+section div {
+    text-align: center;
+}
+
+.seja-contratado {
+    background-color: var(--cor_laranja);
+    padding: 20px;
+    height: 300px;
+    color: var(--cor_azul);
+    font-size: 30px;
+    display: block;
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+}
+
+.redes-sociais a {
+    display: block;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: opacity 0.3s;
+    margin-bottom: 10px;
+}
+
+.redes-sociais a img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 10px 4px 4px var(--cor_sombra);
+    margin-top: 50px;
+}
+
+.redes-sociais a:hover {
+    opacity: 0.7;
+}
+
+.acompanhe h2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+
+@media (width <= 1024px) {
+    #quem_sou_eu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .principal video {
+        width: 10%;
+        height: auto;
+    }
+    #quem_sou_eu p {
+        font-size: 1.25rem;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        padding: 0 10px;
+    }
+    #quem_sou_eu h2 {
+        font-size: 2.5rem;
+        margin-left: 80px;
+    }
+    section#quem_sou_eu button {
+        text-align: center;
+        align-items: center;
+        margin-left: 80px;
+    }
+
+}
+
+@media (width <= 750px) {
+    ul {
+        display: flex;
+        flex-direction: column;
+    }
+    #quem_sou_eu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .lugar_dos_cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        text-align: center;
+    }
+    .card {
+        width: 90%;
+        height: auto;
+    }
+    .card img {
+        height: 250px;
+    }
+    .card a {
+        padding: 10px 20px; /* estou reduzindo o preencchimento vertical e horizontal */
+        display: block;
+        width: 90%;  /* Aqui estou deixando que o botao se ajuste ao conteúdo*/
+        height: auto;
+    }
+    #quem_sou_eu p {
+        font-size: 1.25rem;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        padding: 0 10px;
+    }
+    #quem_sou_eu h2 {
+        font-size: 2.5rem;
+        margin-left: 80px;
+
+    }
+    section#quem_sou_eu button {
+        text-align: center;
+        align-items: center;
+        margin-left: 80px;
+    }
+    .seja-contratado {
+        align-items: center;
+        font-size: 1.25rem;
+    }
+    .seja-contratado h2 {
+        font-size: 1.5rem;
+    }
+    .acompanhe {
+        margin-left: 80px;
+    }
+    .principal {
+        flex-direction: column;
+    }
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 0;
+    }
+    .principal video {
+        width: 10%;
+        height: auto;
+    }
+    .meu_nome {
+        width: 90%;
+        height: 40%;
+        max-width: 400px;
+        left: 5%;
+        top: 50%;
+    }
+    .portfolio {
+        font-size: 2.0rem;
+    }
+    .ver_projeto {
+        margin-left: 15px;
+    }
+    
+}
+
