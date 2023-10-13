@@ -255,6 +255,10 @@ section div {
     justify-content: center;
     margin-top: 30px;
 }
+.roda_pe {
+    background-color: var(--cor_laranja);
+    text-align: center;
+}
 
 
 @media (width <= 1024px) {
