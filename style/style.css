@@ -150,6 +150,11 @@ a {
     position: relative;
 }
 
+.luz, .bandeiras {
+    background-color: #ffffff00;
+    border: none;
+}
+
 .principal video {
     position: absolute;
     top: 0;
@@ -309,9 +314,10 @@ section div {
     }
     .meu_nome {
         width: 90%;
-        height: 40%;
+        height: 20%;
         max-width: 400px;
-        left: 5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         top: 50%;
     }
     .portfolio {
@@ -319,6 +325,9 @@ section div {
     }
     .ver_projeto {
         margin-left: 15px;
+    }
+    .denisson {
+        top: 20%;
     }
     
 }
