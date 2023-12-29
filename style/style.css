@@ -1,5 +1,10 @@
 @import 'variaveis.css';
 
+html, body {
+    height: 100%;
+}
+
+
 * {  /* TODO: "*" indica que estamos fazendo isso para tudo */
     margin: 0;
     padding: 0;
@@ -10,19 +15,6 @@
     height: 100vh;
     width: 100%;
     margin: 0;
-}
-
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    
-    padding: 0 30px;
-    background: var(--cor_transparente);
-    backdrop-filter: var(--desfoque); /* Aplica um efeito de desfoque (vidro) ao fundo */
-    border-radius: 0px; /* Opcional: Adiciona cantos arredondados */
-    padding-top: 25px;
 }
 
 .portfolio {
@@ -120,6 +112,11 @@ section div button {
     cursor: pointer;
 }
 
+.projetos_cartoes {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
 
 section div button:hover {
     background-color: var(--cor_azul);
@@ -141,42 +138,7 @@ a {
 .projetos h2 {
     color: var(--cor_branco);
     font-size: 4.375rem;
-}
-
-.card {
-    background-color: var(--cor_preto);
-    height: 360px;
-    width: 330px;
-    border-radius: 20px;
-    padding: 20px 35px; /* FIXME: ele vai "desgrudar" a imagem dentro do card */
-    text-align: center;
-
-}
-
-.card img {
-    height: 100px;
-}
-
-.card h5 {
-    color: var(--cor_branco);
-    font-size: 1.5rem;
-}
-
-.card p {
-    color: var(--cor_branco);
-    text-align: center;
-    margin-top: 15px;
-    margin-bottom: 50px;
-    font-size: 0.9375rem;
-}
-
-.card a {
-    background-color: var(--cor_laranja);
-    color: white;
-    border-radius: 20px;
-    padding: 20px 20px;
-    cursor: pointer;   /* FIXME: Vai aparecer o cursor do mouse*/
-    display: inline-block;
+    margin-bottom: 1em;
 }
 
 .ver_projeto:hover {
@@ -184,11 +146,6 @@ a {
     transition: 1.5 s;
 }
 
-.lugar_dos_cards {
-    display: flex;  /* FIXME: Vai colocar os cards alinhados*/
-    justify-content: space-around;
-    margin-top: 50px;
-}
 .principal {
     position: relative;
 }
@@ -268,6 +225,11 @@ section div {
         justify-content: center;
         width: 100%;
     }
+
+    .projetos_cartoes {
+        flex-direction: column;
+        align-items: center;
+    }
     .principal video {
         width: 10%;
         height: auto;
@@ -301,25 +263,12 @@ section div {
         justify-content: center;
         width: 100%;
     }
-    .lugar_dos_cards {
+
+    .projetos_cartoes {
         flex-direction: column;
         align-items: center;
-        gap: 30px;
-        text-align: center;
     }
-    .card {
-        width: 90%;
-        height: auto;
-    }
-    .card img {
-        height: 250px;
-    }
-    .card a {
-        padding: 10px 20px; /* estou reduzindo o preencchimento vertical e horizontal */
-        display: block;
-        width: 90%;  /* Aqui estou deixando que o botao se ajuste ao conteúdo*/
-        height: auto;
-    }
+
     #quem_sou_eu p {
         font-size: 1.25rem;
         margin-top: 10px;

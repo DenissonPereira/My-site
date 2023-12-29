@@ -1,26 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
     <title>Denisson Pereira</title>
     <link rel="shortcut icon" href="/public/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
+
 <body>
     <div class="principal" id="home">
         <video autoplay loop muted>
             <source src="/assets/video/stars_-_121747 (1080p).mp4" type="video/mp4">
         </video>
-        <nav>
-            <h2 class="portfolio">DIS<span>COVER</span></h2>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#quem_sou_eu">About Me</a></li>
-                <li><a href="#projetos">Projects</a></li>
-                <li><a href="#contato">Contact</a></li>
-                <li><a href="pages/index.html">Blog</a></li>
-            </ul>
+
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand text-light" href="#">DP</a>
+                <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse ms-5" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active text-light" aria-current="page" href="#home">HOME</a>
+                        <a class="nav-link text-light" href="#quem_sou_eu">SOBRE</a>
+                        <a class="nav-link text-light" href="#projetos">PROJETOS</a>
+                        <a class="nav-link text-light" href="#contato">CONTATO</a>
+                        <a class="nav-link disabled text-secondary" aria-disabled="true">BLOG</a>
+                    </div>
+                </div>
+            </div>
         </nav>
 
         <div class="meu_nome">
@@ -34,36 +48,108 @@
         <img src="/assets/image/minha_foto_1.png" id="segunda_imagem">
         <div>
             <h2>Quem sou eu</h2>
-            <p><q>Sou um estudante dedicado do curso de Bacharel em Engenharia de Software com uma paixão por tecnologia e programação. Além disso, estou atualmente cursando meu doutorado (PhD) em Física, buscando expandir meu conhecimento e contribuir para avanços na área. Ao longo dos últimos dois anos, tenho atuado como freelancer, o que me deu a oportunidade de aplicar o que aprendi em uma variedade de projetos desafiadores. Minhas especialidades abrangem tecnologias como React, HTML, CSS, JavaScript, Python e Java. Estou motivado pela curiosidade de explorar a interseção entre ciência e tecnologia, e estou comprometido em fornecer soluções de alta qualidade em cada desafio que enfrento.</q></p>
+            <p><q>Sou um estudante dedicado do curso de Bacharel em Engenharia de Software com uma paixão por tecnologia
+                    e programação. Além disso, estou atualmente cursando meu doutorado (PhD) em Física, buscando
+                    expandir meu conhecimento e contribuir para avanços na área. Ao longo dos últimos dois anos, tenho
+                    atuado como freelancer, o que me deu a oportunidade de aplicar o que aprendi em uma variedade de
+                    projetos desafiadores. Minhas especialidades abrangem tecnologias como React, HTML, CSS, JavaScript,
+                    Python e Java. Estou motivado pela curiosidade de explorar a interseção entre ciência e tecnologia,
+                    e estou comprometido em fornecer soluções de alta qualidade em cada desafio que enfrento.</q></p>
             <a href="/pages/redes_sociais/index.html" target="_blank"><button>Entre em contato</button></a>
         </div>
     </section>
     <div class="projetos" id="projetos">
         <h2>Principais Projetos</h2>
-        <div class="lugar_dos_cards">
-            <div class="card">
-                <img src="/assets/image/coca.jpg">
-                <h5>Coca-Cola</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, recusandae deleniti at laudantium aperiam velit disore a fugit ut hic illo. Placeat.</p>
-                <a href="./pages/projeto1/index.html" class="ver_projeto" target="_blank">Ver projeto</a>
+        <div class="projetos_cartoes">
+            <div class="cartas">
+                <div class="card" style="width: 18rem;">
+                    <img src="./assets/image/coca.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title"> Yu-Gi-Oh! Cards Project</h5>
+                      <p class="card-text">O projeto consiste em um site dedicado ao universo do anime Yu-Gi-Oh!</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item"> <img src="https://img.shields.io/badge/ReactJs-v18.2.0-blue?style=flat&logo=react&logoColor=white" alt="React"></li>
+                      <li class="list-group-item"><img src="https://img.shields.io/badge/React%20Router-6.20.0-%238A2BE2?style=flat&logo=react-router&logoColor=white" alt="React"></li>
+                      <li class="list-group-item"><img src="https://img.shields.io/badge/Sass-purple?style=flat&logo=sass&logoColor=white" alt="React"></li>
+                    </ul>
+                    <div class="card-body">
+                      <a href="https://denissonpereira.github.io/yugioh-cards/" target="_blank" class="btn btn-warning">Ver projeto</a>
+                      <a href="https://github.com/DenissonPereira/yugioh-cards" target="_blank" class="btn btn-warning">Repositório</a>
+                    </div>
+                  </div>
             </div>
-            <div class="card">
-                <img src="/assets/image/pepsi-5152332_1280.jpg">
-                <h5>Pepsi</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, recusandae deleniti at laudantium aperiam velit disore a fugit ut hic illo. Placeat.</p>
-                <a class="ver_projeto">Ver projeto</a>
+            <div class="cartas">
+                <div class="card" style="width: 18rem;">
+                    <img src="./assets/image/coca.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">An item</li>
+                      <li class="list-group-item">A second item</li>
+                      <li class="list-group-item">A third item</li>
+                    </ul>
+                    <div class="card-body">
+                      <a href="#" class="btn btn-warning">Ver projeto</a>
+                      <a href="#" class="btn btn-warning">Repositório</a>
+                    </div>
+                  </div>
             </div>
-            <div class="card">
-                <img src="/assets/image/fanta.jpg">
-                <h5>Fantah</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, recusandae deleniti at laudantium aperiam velit disore a fugit ut hic illo. Placeat.</p>
-                <a class="ver_projeto">Ver projeto</a>
+            <div class="cartas">
+                <div class="card" style="width: 18rem;">
+                    <img src="./assets/image/coca.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">An item</li>
+                      <li class="list-group-item">A second item</li>
+                      <li class="list-group-item">A third item</li>
+                    </ul>
+                    <div class="card-body">
+                      <a href="#" class="btn btn-warning">Ver projeto</a>
+                      <a href="#" class="btn btn-warning">Repositório</a>
+                    </div>
+                  </div>
             </div>
-            <div class="card">
-                <img src="/assets/image/fanta.jpg">
-                <h5>Guaranáh</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, recusandae deleniti at laudantium aperiam velit disore a fugit ut hic illo. Placeat.</p>
-                <a class="ver_projeto">Ver projeto</a>
+            <div class="cartas">
+                <div class="card" style="width: 18rem;">
+                    <img src="./assets/image/coca.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">An item</li>
+                      <li class="list-group-item">A second item</li>
+                      <li class="list-group-item">A third item</li>
+                    </ul>
+                    <div class="card-body">
+                      <a href="#" class="btn btn-warning">Ver projeto</a>
+                      <a href="#" class="btn btn-warning">Repositório</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="cartas">
+                <div class="card" style="width: 18rem;">
+                    <img src="./assets/image/coca.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">An item</li>
+                      <li class="list-group-item">A second item</li>
+                      <li class="list-group-item">A third item</li>
+                    </ul>
+                    <div class="card-body">
+                      <a href="#" class="btn btn-warning">Ver projeto</a>
+                      <a href="#" class="btn btn-warning">Repositório</a>
+                    </div>
+                  </div>
             </div>
         </div>
     </div>
@@ -82,10 +168,14 @@
                 <img src="/assets/image/insta.png" alt="Instagram">
             </a>
         </div>
-        
+
     </section>
     <footer class="roda_pe">
         <p>&copy; 2023 Denisson Pereira. Todos os direitos reservados.</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
