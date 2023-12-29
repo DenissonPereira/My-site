@@ -29,6 +29,14 @@ html, body {
     font-weight: 400;
 }
 
+#pt {
+    text-shadow: 2px 2px 8px orange;
+}
+
+#lua {
+    text-shadow: 2px 0px 8px white;
+}
+
 li {
     color: var(--cor_branco);
     list-style: none;

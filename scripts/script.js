@@ -6,6 +6,10 @@ const navCor = document.getElementById('nav');
 const corProjetos = document.getElementById('projetos');
 const textoProjetos = document.getElementById('h2_projetos');
 
+const lua = document.getElementById('lua');
+const sol = document.getElementById('sol');
+
+
 
 function acender() {
 
@@ -17,6 +21,9 @@ function acender() {
 
     corProjetos.style.backgroundColor = 'white';
     textoProjetos.style.color = 'black';
+
+    sol.style.textShadow = '2px 2px 8px red';
+    lua.style.textShadow = 'none';
 
 };
 
@@ -31,6 +38,9 @@ function escurecer() {
     corProjetos.style.backgroundColor = 'rgb(27, 25, 25)';
     textoProjetos.style.color = 'white';
 
+    sol.style.textShadow = 'none';
+    lua.style.textShadow = '2px 2px 8px white';
+
 };
 
 const textoHome = document.getElementById('texto_home');
@@ -40,6 +50,9 @@ const textoContato = document.getElementById('texto_contato');
 const meuNome = document.getElementById('h3_meu_nome');
 const textoQuemSouEu = document.getElementById('texto_quem_sou_eu');
 const textoRedes = document.getElementById('texto_redes_sociais');
+
+const bandeiraBrasil = document.getElementById('pt');
+const bandeiraEstados = document.getElementById('ig');
 
 function pt() {
 
@@ -56,6 +69,9 @@ function pt() {
     textoProjetos.textContent = 'Principais Projetos';
 
     textoRedes.textContent = 'Acompanhe meu trabalho nas redes sociais';
+
+    bandeiraBrasil.style.textShadow = '2px 2px 8px orange';
+    bandeiraEstados.style.textShadow = 'none';
 
 };
 
@@ -74,5 +90,8 @@ function ig() {
     textoProjetos.textContent = 'Main Projects';
 
     textoRedes.textContent = 'Follow my work on social networks';
+
+    bandeiraEstados.style.textShadow = '2px 2px 8px orange';
+    bandeiraBrasil.style.textShadow = 'none';
 
 };
